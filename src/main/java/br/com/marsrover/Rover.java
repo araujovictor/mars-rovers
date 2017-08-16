@@ -1,16 +1,16 @@
 package br.com.marsrover;
 
 public class Rover {
-	
+
 	private int coordX;
 	private int coordY;
 	private Character facing;
 	private String instructions;
-	
+
 	public Rover() {
 
 	}
-	
+
 	public Rover(int coordX, int coordY, Character facing, String instructions) {
 		this.coordX = coordX;
 		this.coordY = coordY;
@@ -49,9 +49,9 @@ public class Rover {
 	public void setFacing(Character facing) {
 		this.facing = facing;
 	}
-	
+
 	@Override
-	public String toString(){
+	public String toString() {
 		StringBuilder roverFinalPosition = new StringBuilder();
 		roverFinalPosition.append(coordX);
 		roverFinalPosition.append(" ");

@@ -33,7 +33,8 @@ public class MarsRovers {
 			if (!(plateau.outsideArea(rover.getCoordX(), rover.getCoordY() + 1))) {
 				rover.setCoordY(rover.getCoordY() + 1);
 			} else {
-				throw new IllegalArgumentException("Não é possível mover para a coordenada desejada, pois ela se encontra fora da area delimitada.");
+				throw new IllegalArgumentException(
+						"Não é possível mover para a coordenada desejada, pois ela se encontra fora da area delimitada.");
 			}
 			break;
 
@@ -41,7 +42,8 @@ public class MarsRovers {
 			if (!(plateau.outsideArea(rover.getCoordX(), rover.getCoordY() - 1))) {
 				rover.setCoordY(rover.getCoordY() - 1);
 			} else {
-				throw new IllegalArgumentException("Não é possível mover para a coordenada desejada, pois ela se encontra fora da area delimitada.");
+				throw new IllegalArgumentException(
+						"Não é possível mover para a coordenada desejada, pois ela se encontra fora da area delimitada.");
 			}
 			break;
 
@@ -49,7 +51,8 @@ public class MarsRovers {
 			if (!(plateau.outsideArea(rover.getCoordX() + 1, rover.getCoordY()))) {
 				rover.setCoordX(rover.getCoordX() + 1);
 			} else {
-				throw new IllegalArgumentException("Não é possível mover para a coordenada desejada, pois ela se encontra fora da area delimitada.");
+				throw new IllegalArgumentException(
+						"Não é possível mover para a coordenada desejada, pois ela se encontra fora da area delimitada.");
 			}
 			break;
 
@@ -57,7 +60,8 @@ public class MarsRovers {
 			if (!(plateau.outsideArea(rover.getCoordX() - 1, rover.getCoordY()))) {
 				rover.setCoordX(rover.getCoordX() - 1);
 			} else {
-				throw new IllegalArgumentException("Não é possível mover para a coordenada desejada, pois ela se encontra fora da area delimitada.");
+				throw new IllegalArgumentException(
+						"Não é possível mover para a coordenada desejada, pois ela se encontra fora da area delimitada.");
 			}
 			break;
 
@@ -109,5 +113,4 @@ public class MarsRovers {
 	public String afterMove() {
 		return rover.toString();
 	}
-
 }
